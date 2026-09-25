@@ -345,8 +345,90 @@ export default function App() {
         </div>
       </section>
 
+      {/* HBOT 2.0 Chamber Section */}
+      <section id="hbot" className="py-20 px-4 sm:px-8 bg-[#090710] border-t border-purple-950 scroll-mt-20">
+        <div className="max-w-7xl mx-auto bg-[#0e0a17] border border-purple-900/50 rounded-3xl p-8 sm:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <span className="text-xs font-mono text-purple-400 uppercase tracking-widest bg-purple-500/10 border border-purple-500/30 px-3 py-1 rounded-full">
+                HYPERBARIC OXYGEN 2.0 ATA
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-4">
+                Clinical Hard-Shell HBOT Chambers
+              </h2>
+              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                Pressurize to 2.0 ATA with 100% medical-grade oxygen. Drives up to 15x greater oxygen saturation into plasma, tissues, and mitochondrial energy cycles for neuro-recovery and stem cell mobilization.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <button
+                  onClick={() => setIsBookModalOpen(true)}
+                  className="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold font-mono text-xs rounded-xl transition shadow-lg shadow-purple-900/40"
+                >
+                  RESERVE HBOT CHAMBER SESSION
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6 bg-slate-900/60 border border-purple-900/40 rounded-2xl space-y-3 font-mono text-xs">
+              <div className="flex justify-between py-2 border-b border-purple-950">
+                <span className="text-slate-400">Atmospheric Pressure:</span>
+                <span className="text-white font-bold">2.0 ATA (33ft Depth Equivalent)</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-purple-950">
+                <span className="text-slate-400">Oxygen Purity:</span>
+                <span className="text-purple-400 font-bold">99.6% Medical-Grade USP</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span className="text-slate-400">Session Protocol:</span>
+                <span className="text-indigo-400 font-bold">60 or 90 Minutes with Air Breaks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IV Lounge Section */}
+      <section id="iv-lounge" className="py-20 px-4 sm:px-8 bg-[#0b0813] border-t border-purple-950 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-mono text-purple-400 uppercase tracking-widest bg-purple-500/10 border border-purple-500/30 px-3 py-1 rounded-full">
+              CELLULAR INFUSION LOUNGE
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-4">
+              Physician-Formulated Micronutrient & NAD+ Drips
+            </h2>
+            <p className="text-slate-400 text-sm mt-3">
+              100% bioavailable intravenous therapy administered by certified RNs in zero-gravity ergonomic massage suites.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
+              <span className="text-[10px] font-mono text-purple-400 uppercase">LONGEVITY PROTOCOL</span>
+              <h4 className="text-lg font-bold text-white mt-2">Pure Cellular NAD+ (500mg)</h4>
+              <p className="text-xs text-slate-400 mt-2">Mitochondrial repair, sirtuin activation, and cellular DNA rejuvenation.</p>
+              <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-purple-300 font-bold">$495 / Drip</div>
+            </div>
+
+            <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
+              <span className="text-[10px] font-mono text-indigo-400 uppercase">ATHLETIC RECHARGE</span>
+              <h4 className="text-lg font-bold text-white mt-2">Glutathione & Amino Matrix</h4>
+              <p className="text-xs text-slate-400 mt-2">High-dose master antioxidant flush paired with branched-chain amino acids.</p>
+              <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-indigo-300 font-bold">$225 / Drip</div>
+            </div>
+
+            <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
+              <span className="text-[10px] font-mono text-pink-400 uppercase">IMMUNITY & HYDRATION</span>
+              <h4 className="text-lg font-bold text-white mt-2">Myers Cocktail Ultra</h4>
+              <p className="text-xs text-slate-400 mt-2">Buffered vitamin C, B-complex, zinc sulfate, and balanced electrolytes.</p>
+              <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-pink-300 font-bold">$185 / Drip</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Membership Tiers */}
-      <section id="memberships" className="py-20 px-4 sm:px-8 bg-[#08070d]">
+      <section id="memberships" className="py-20 px-4 sm:px-8 bg-[#08070d] scroll-mt-20">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-mono text-purple-400 uppercase tracking-widest bg-purple-500/10 border border-purple-500/30 px-3 py-1 rounded-full">
