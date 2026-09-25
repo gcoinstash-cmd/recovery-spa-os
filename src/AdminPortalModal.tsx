@@ -49,17 +49,17 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white tracking-wide">RECOVERY LAB OS DOOR</h3>
-                <p className="text-xs text-slate-400">Hyperbaric, IV Lounge & Contrast Therapy Administration</p>
+                <p className="text-base text-zinc-200 leading-relaxed">Hyperbaric, IV Lounge & Contrast Therapy Administration</p>
               </div>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono text-purple-400 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold font-mono text-purple-400 uppercase tracking-wider mb-2">
                   Staff Access Passkey
                 </label>
                 <div className="relative">
-                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-500" />
+                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-300" />
                   <input
                     type="password"
                     value={passkey}
@@ -86,14 +86,14 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <button
                   type="button"
                   onClick={autofillPasskey}
-                  className="py-3 px-4 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-500/30 text-purple-300 font-mono text-xs rounded-xl transition-all"
+                  className="py-3 px-4 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-500/30 text-purple-300 font-mono text-base font-semibold min-h-[44px] rounded-xl transition-all"
                 >
                   ⚡ Auto-Fill: recovery2026
                 </button>
               </div>
             </form>
 
-            <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-slate-800 text-xs font-semibold text-slate-300 flex items-center justify-between">
               <span>Security Level: Clinical Wellness Tier-3</span>
               <span className="font-mono text-purple-400">Auth Gate Active</span>
             </div>
@@ -107,10 +107,10 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-white">Live Chamber & Suite Telemetry</h4>
-                  <p className="text-xs text-slate-400">Real-Time Temperature, Oxygen Flow & Lounge Queue</p>
+                  <p className="text-base text-zinc-200 leading-relaxed">Real-Time Temperature, Oxygen Flow & Lounge Queue</p>
                 </div>
               </div>
-              <span className="px-2.5 py-1 text-[10px] font-mono bg-purple-500/10 text-purple-400 border border-purple-500/30 rounded-full flex items-center gap-1.5">
+              <span className="px-2.5 py-1 text-xs font-semibold tracking-wider font-mono bg-purple-500/10 text-purple-400 border border-purple-500/30 rounded-full flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping"></span>
                 ACTIVE
               </span>
@@ -123,7 +123,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Activity className="w-3.5 h-3.5 text-purple-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">2.0 ATA</div>
-                <div className="text-[10px] text-purple-400 mt-1">Chamber 1 & 2 In Cycle</div>
+                <div className="text-xs font-semibold tracking-wider text-purple-400 mt-1">Chamber 1 & 2 In Cycle</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -132,7 +132,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <ThermometerSnowflake className="w-3.5 h-3.5 text-cyan-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">38.4°F</div>
-                <div className="text-[10px] text-cyan-400 mt-1">Ozone Filtration Active</div>
+                <div className="text-xs font-semibold tracking-wider text-cyan-400 mt-1">Ozone Filtration Active</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -141,7 +141,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Flame className="w-3.5 h-3.5 text-amber-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">212°F</div>
-                <div className="text-[10px] text-amber-400 mt-1">Far-Infrared Activated</div>
+                <div className="text-xs font-semibold tracking-wider text-amber-400 mt-1">Far-Infrared Activated</div>
               </div>
             </div>
 
@@ -153,21 +153,21 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                     <span className="font-semibold text-white">Alexander Wright (Founders Club)</span>
                     <span className="text-slate-400 ml-2">500mg NAD+ Cellular IV // Suite 3</span>
                   </div>
-                  <span className="text-purple-400 font-mono text-[11px] bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/20">INFUSING (35m)</span>
+                  <span className="text-purple-400 font-mono text-xs font-semibold bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/20">INFUSING (35m)</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">Seraphina Fox</span>
                     <span className="text-slate-400 ml-2">Contrast Circuit (Sauna + Plunge) // Bay 1</span>
                   </div>
-                  <span className="text-cyan-400 font-mono text-[11px] bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">ROUND 3/4</span>
+                  <span className="text-cyan-400 font-mono text-xs font-semibold bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">ROUND 3/4</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">Dr. Henrik Meyer</span>
                     <span className="text-slate-400 ml-2">60m Hyperbaric Oxygen ATA 2.0 // Pod A</span>
                   </div>
-                  <span className="text-emerald-400 font-mono text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">COMPLETED</span>
+                  <span className="text-emerald-400 font-mono text-xs font-semibold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">COMPLETED</span>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="flex gap-2">
                 <button
                   onClick={onClose}
-                  className="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-xl text-xs transition-all shadow-md"
+                  className="px-5 py-3 min-h-[44px] bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-xl text-base font-semibold min-h-[44px] transition-all shadow-md"
                 >
                   Close Console
                 </button>

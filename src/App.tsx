@@ -101,7 +101,7 @@ export default function App() {
         <span className="text-purple-800">•</span>
         <button 
           onClick={() => setIsAdminOpen(true)}
-          className="text-purple-400 hover:text-purple-300 font-mono text-[11px] underline ml-2 font-semibold"
+          className="text-purple-400 hover:text-purple-300 font-mono text-xs font-semibold underline ml-2 font-semibold"
         >
           [ STAFF PORTAL ]
         </button>
@@ -118,7 +118,7 @@ export default function App() {
               <span className="font-extrabold tracking-wider text-lg text-white font-mono flex items-center gap-1.5">
                 RECOVERY<span className="text-purple-400">LAB</span>
               </span>
-              <p className="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Contrast & Cellular Wellness OS</p>
+              <p className="text-xs font-semibold tracking-wider tracking-widest text-slate-400 uppercase font-mono">Contrast & Cellular Wellness OS</p>
             </div>
           </div>
 
@@ -205,7 +205,7 @@ export default function App() {
                     <div className="w-3 h-3 rounded-full bg-purple-400 animate-ping"></div>
                     <span className="text-xs font-mono text-purple-400 uppercase tracking-wider">CHAMBER TELEMETRY FEED</span>
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">ACTIVE SUITE 01</span>
+                  <span className="text-xs text-slate-300 font-mono">ACTIVE SUITE 01</span>
                 </div>
 
                 <div className="space-y-4">
@@ -285,7 +285,7 @@ export default function App() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0f0b1a] via-transparent to-black/40"></div>
-                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-purple-900/60 px-2.5 py-1 rounded-lg text-[10px] font-mono text-purple-300 uppercase">
+                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-purple-900/60 px-2.5 py-1 rounded-lg text-xs font-semibold tracking-wider font-mono text-purple-300 uppercase">
                       {service.category}
                     </span>
                   </div>
@@ -298,13 +298,13 @@ export default function App() {
                         </h3>
                         <span className="font-mono font-bold text-purple-400 text-sm">{service.price}</span>
                       </div>
-                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mt-2">
+                      <p className="text-base text-zinc-200 leading-relaxed line-clamp-2 leading-relaxed mt-2">
                         {service.tagline}
                       </p>
                     </div>
 
                     <div className="space-y-2 pt-2 border-t border-purple-950">
-                      <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Key Mechanisms:</span>
+                      <span className="text-xs font-semibold font-mono text-slate-400 uppercase tracking-wider block">Key Mechanisms:</span>
                       <ul className="text-xs space-y-1 text-slate-300">
                         {service.benefits.slice(0, 3).map((item, idx) => (
                           <li key={idx} className="flex items-center space-x-1.5">
@@ -404,23 +404,23 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
-              <span className="text-[10px] font-mono text-purple-400 uppercase">LONGEVITY PROTOCOL</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-purple-400 uppercase">LONGEVITY PROTOCOL</span>
               <h4 className="text-lg font-bold text-white mt-2">Pure Cellular NAD+ (500mg)</h4>
-              <p className="text-xs text-slate-400 mt-2">Mitochondrial repair, sirtuin activation, and cellular DNA rejuvenation.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Mitochondrial repair, sirtuin activation, and cellular DNA rejuvenation.</p>
               <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-purple-300 font-bold">$495 / Drip</div>
             </div>
 
             <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
-              <span className="text-[10px] font-mono text-indigo-400 uppercase">ATHLETIC RECHARGE</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 uppercase">ATHLETIC RECHARGE</span>
               <h4 className="text-lg font-bold text-white mt-2">Glutathione & Amino Matrix</h4>
-              <p className="text-xs text-slate-400 mt-2">High-dose master antioxidant flush paired with branched-chain amino acids.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">High-dose master antioxidant flush paired with branched-chain amino acids.</p>
               <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-indigo-300 font-bold">$225 / Drip</div>
             </div>
 
             <div className="p-6 bg-[#0e0a17] border border-purple-950 rounded-2xl">
-              <span className="text-[10px] font-mono text-pink-400 uppercase">IMMUNITY & HYDRATION</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-pink-400 uppercase">IMMUNITY & HYDRATION</span>
               <h4 className="text-lg font-bold text-white mt-2">Myers Cocktail Ultra</h4>
-              <p className="text-xs text-slate-400 mt-2">Buffered vitamin C, B-complex, zinc sulfate, and balanced electrolytes.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Buffered vitamin C, B-complex, zinc sulfate, and balanced electrolytes.</p>
               <div className="mt-4 pt-4 border-t border-purple-950 text-xs font-mono text-pink-300 font-bold">$185 / Drip</div>
             </div>
           </div>
@@ -447,8 +447,8 @@ export default function App() {
               <div className="space-y-4">
                 <span className="text-xs font-mono text-slate-400 uppercase">TIER 1 // ATHLETE</span>
                 <h3 className="text-2xl font-bold text-white">The Contrast Pass</h3>
-                <div className="text-3xl font-extrabold text-purple-400 font-mono">$249 <span className="text-sm font-normal text-slate-500">/ mo</span></div>
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <div className="text-3xl font-extrabold text-purple-400 font-mono">$249 <span className="text-sm font-normal text-slate-300">/ mo</span></div>
+                <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                   Unlimited access to thermal contrast suites: sub-zero cold plunge and Finnish cedar sauna.
                 </p>
                 <ul className="text-xs space-y-2 text-slate-300 pt-2 border-t border-purple-950">
@@ -463,7 +463,7 @@ export default function App() {
             </div>
 
             <div className="bg-[#120c1f] border-2 border-purple-500 rounded-2xl p-6 sm:p-8 space-y-6 flex flex-col justify-between relative shadow-2xl shadow-purple-600/20">
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-500 text-white font-mono text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-500 text-white font-mono text-xs font-semibold tracking-wider font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                 MOST POPULAR
               </div>
               <div className="space-y-4">
@@ -489,8 +489,8 @@ export default function App() {
               <div className="space-y-4">
                 <span className="text-xs font-mono text-slate-400 uppercase">TIER 3 // EXECUTIVE VIP</span>
                 <h3 className="text-2xl font-bold text-white">The Bio-Apex VIP</h3>
-                <div className="text-3xl font-extrabold text-purple-400 font-mono">$899 <span className="text-sm font-normal text-slate-500">/ mo</span></div>
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <div className="text-3xl font-extrabold text-purple-400 font-mono">$899 <span className="text-sm font-normal text-slate-300">/ mo</span></div>
+                <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                   Unlimited HBOT 2.0, unlimited contrast circuits, bi-weekly NAD+ drips, and private locker suite.
                 </p>
                 <ul className="text-xs space-y-2 text-slate-300 pt-2 border-t border-purple-950">
@@ -516,7 +516,7 @@ export default function App() {
               <ThermometerSnowflake className="w-4 h-4 text-purple-400" />
               <span className="font-bold text-white font-mono tracking-wider">HYPERBARIC & RECOVERY LAB</span>
             </div>
-            <p className="text-slate-400 text-[11px] leading-relaxed">
+            <p className="text-slate-400 text-xs font-semibold leading-relaxed">
               Medical wellness and human optimization operating system. Designed for hyperbaric centers, contrast therapy studios, and IV lounges.
             </p>
           </div>
@@ -543,7 +543,7 @@ export default function App() {
 
           <div className="space-y-3">
             <h5 className="font-mono text-white text-xs uppercase tracking-wider">Staff Door</h5>
-            <p className="text-[11px] text-slate-400">
+            <p className="text-xs font-semibold text-slate-400">
               Access the live chamber queue with the 1-click bypass passkey:
             </p>
             <button
@@ -555,7 +555,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto pt-8 border-t border-purple-950 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <div className="max-w-7xl mx-auto pt-8 border-t border-purple-950 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-slate-300">
           <div>© 2026 Hyperbaric & Recovery Lab OS. All Rights Reserved. Turnkey Clinical Operating System.</div>
           <div className="mt-2 sm:mt-0 font-mono text-purple-400">Passkey: recovery2026</div>
         </div>
@@ -583,29 +583,29 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white">Book Recovery Suite Reservation</h3>
-                    <p className="text-xs text-slate-400">Select preferred modality and appointment time</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Select preferred modality and appointment time</p>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Full Legal Name</label>
-                  <input required placeholder="Alexander Wright" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-sm text-white focus:border-purple-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Full Legal Name</label>
+                  <input required placeholder="Alexander Wright" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-purple-500 outline-none" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Email</label>
-                    <input required type="email" placeholder="alexander@example.com" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-sm text-white focus:border-purple-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Email</label>
+                    <input required type="email" placeholder="alexander@example.com" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-purple-500 outline-none" />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Phone</label>
-                    <input required type="tel" placeholder="+1 (555) 789-0123" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-sm text-white focus:border-purple-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Phone</label>
+                    <input required type="tel" placeholder="+1 (555) 789-0123" className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-purple-500 outline-none" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Select Recovery Modality</label>
-                  <select className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-sm text-white focus:border-purple-500 outline-none">
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Select Recovery Modality</label>
+                  <select className="w-full bg-slate-900 border border-purple-900/60 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-purple-500 outline-none">
                     <option>Thermal Contrast Circuit (Sauna + Plunge) ($75)</option>
                     <option>Hard-Shell Hyperbaric Oxygen (HBOT 2.0 ATA) ($165)</option>
                     <option>Cellular NAD+ & Micronutrient IV Lounge ($295)</option>
@@ -615,7 +615,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-purple-600/25 mt-4"
+                  className="w-full py-3.5 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-base font-semibold min-h-[44px] tracking-wider transition-all shadow-lg shadow-purple-600/25 mt-4"
                 >
                   CONFIRM SUITE RESERVATION
                 </button>
@@ -626,7 +626,7 @@ export default function App() {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h4 className="text-xl font-bold text-white">Suite Confirmed!</h4>
-                <p className="text-xs text-slate-400 max-w-xs mx-auto">
+                <p className="text-base text-zinc-200 leading-relaxed max-w-xs mx-auto">
                   Your recovery suite has been locked. Please arrive 10 minutes prior to your session for check-in and robe fitting.
                 </p>
               </div>
